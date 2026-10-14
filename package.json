@@ -1,0 +1,72 @@
+{
+  "name": "dm-caixa-aqui-gestao",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DM Caixa Aqui — Gestão Operacional de processos de crédito imobiliário",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "demo": "node scripts/demo.mjs",
+    "demo:dev": "node scripts/demo.mjs --dev",
+    "demo:reset": "node scripts/demo.mjs --reset",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "db:local:start": "node scripts/local-db.mjs start",
+    "db:local:stop": "node scripts/local-db.mjs stop",
+    "db:reset": "node scripts/db-reset.mjs",
+    "db:migrate": "node scripts/db-migrate.mjs",
+    "seed": "tsx scripts/seed.ts",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:db": "vitest run tests/db",
+    "test:e2e": "playwright test",
+    "setup:admin": "tsx scripts/create-admin.ts",
+    "test:all": "vitest run && playwright test"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.57.4",
+    "@tanstack/react-table": "^8.21.3",
+    "bcryptjs": "^3.0.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "jose": "^6.1.0",
+    "lucide-react": "^0.544.0",
+    "next": "^15.5.27",
+    "postgres": "^3.4.7",
+    "radix-ui": "^1.4.3",
+    "react": "^19.1.9",
+    "react-dom": "^19.1.9",
+    "react-hook-form": "^7.62.0",
+    "recharts": "^2.15.4",
+    "server-only": "^0.0.1",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.9",
+    "@electric-sql/pglite-socket": "^0.2.12",
+    "@eslint/eslintrc": "^3.3.1",
+    "@playwright/test": "^1.56.1",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^22.18.6",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9.36.0",
+    "eslint-config-next": "^15.5.27",
+    "tailwindcss": "^4.1.13",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "overrides": {
+    "postcss": "^8.5.30",
+    "sharp": "^0.35.5"
+  }
+}

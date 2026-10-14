@@ -1,0 +1,14 @@
+node_modules
+.next
+.env
+.env.local
+.local-storage
+.env.*.local
+coverage
+playwright-report
+test-results
+*.tsbuildinfo
+next-env.d.ts
+
+# modo demonstração (banco PGlite, arquivos e segredo locais)
+.demo/
